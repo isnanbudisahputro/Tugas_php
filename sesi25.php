@@ -5,23 +5,23 @@
 $bilangan = 6;
 
 if ($bilangan % 2 == 0) {
-    echo "Bilangan $bilangan adalah bilangan genap.";
+    echo "Bilangan $bilangan adalah bilangan genap.<br>";
 } else {
-    echo "Bilangan $bilangan adalah bilangan ganjil.<br>";
+    echo "Bilangan $bilangan adalah bilangan ganjil.<br>";
 }
 
 //soal 2
 
-$year = 2024;
+$year = 2020;
 
 if (($year % 4 == 0 && $year % 100 != 0) || $year % 400 == 0) {
-    echo $year . " adalah tahun kabisat.";
+    echo $year . " adalah tahun kabisat.<br>";
 } else {
     echo $year . " bukan tahun kabisat.<br>";
 }
 
 //soal 3
-$nilai = 85;
+$nilai = 75;
 
 if ($nilai >= 90 && $nilai <= 100) {
     $grade = "A";
@@ -35,4 +35,5 @@ if ($nilai >= 90 && $nilai <= 100) {
     $grade = "E";
 }
 echo "Nilai Anda adalah $nilai, dan grade Anda adalah $grade.<br>";
+
 ?>
