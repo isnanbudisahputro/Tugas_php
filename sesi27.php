@@ -34,11 +34,11 @@ echo "<br>";
         }
 
         tr:nth-child(odd) {
-            background-color: gray;
+            background-color: white;
         }
 
         tr:nth-child(even) {
-            background-color: white;
+            background-color: grey;
         }
     </style>
 </head>
