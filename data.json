@@ -1,0 +1,63 @@
+[
+	{
+		"no" : "",
+		"nama" : "Pelita",
+		"kelas" : "Laravel",
+		"alamat" : "Bandung",
+		"tanggal_lahir" : "1997-12-27",
+		"hasil" : "",
+		"umur" : "",
+		"nilai" : 90 
+		
+	},
+	{
+		"no" : "",
+		"nama" : "Najmina",
+		"kelas" : "Vue JS",
+		"alamat" : "Jakarta",
+		"tanggal_lahir" : "1998-10-07",
+		"hasil" : "",
+		"umur" : "",
+		"nilai" : 55 
+	},
+	{
+		"no" : "",
+		"nama" : "Anita",
+		"kelas" : "Design",
+		"alamat" : "Semarang",
+		"tanggal_lahir" : "1999-08-20",
+		"hasil" : "",
+		"umur" : "",
+		"nilai" : 80 
+	},
+	{
+		"no" : "",
+		"nama" : "Bayu",
+		"kelas" : "Digital Marketing",
+		"alamat" : "Bandung",
+		"tanggal_lahir" : "1990-01-01",
+		"hasil" : "",
+		"umur" : "",
+		"nilai" : 65 
+	},
+	{
+		"no" : "",
+		"nama" : "Nasa",
+		"kelas" : "UI/UX Designer",
+		"alamat" : "Bandung",
+		"tanggal_lahir" : "1995-04-10",
+		"hasil" : "",
+		"umur" : "",
+		"nilai" : 70 
+	},
+	{
+		"no" : "",
+		"nama" : "Rahma",
+		"kelas" : "Node JS",
+		"alamat" : "Yogyakarta",
+		"tanggal_lahir" : "1993-09-15",
+		"hasil" : "" ,
+		"umur" : "",
+		"nilai" : 85 
+	}
+]
