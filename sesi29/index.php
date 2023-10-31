@@ -14,12 +14,12 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
     <title>Data Pelanggan</title>
     <style>
         .navbar {
-            background-color: #007BFF; /* Ganti dengan warna yang Anda inginkan */
+            background-color: #007BFF; 
         }
         
-        /* Warna teks atau link di navbar */
+
         .navbar a {
-            color: white; /* Ganti dengan warna teks yang sesuai */
+            color: white;
         }
 
         table {
@@ -72,7 +72,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-md-12 text-center mb-5 mt-5">
+        <div class="col-md-12 text-center mb-5 mt-5 loader">
             <a href="index.php">Home</a> |
             <a href="produk.php">Produk</a> |
             <a href="pembayaran.php">Pembayaran</a>
