@@ -1,6 +1,6 @@
 <?php
     include "connection.php";
-    $query = mysqli_query($conn, "SELECT * FROM pelanggan");
+    $query = mysqli_query($conn, "SELECT * FROM produk");
 ?>
 
 <!DOCTYPE html>
@@ -8,20 +8,10 @@
 <head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Pelanggan</title>
+    <title>Data Produk</title>
     <style>
-        .navbar {
-            background-color: #007BFF; /* Ganti dengan warna yang Anda inginkan */
-        }
-        
-        /* Warna teks atau link di navbar */
-        .navbar a {
-            color: white; /* Ganti dengan warna teks yang sesuai */
-        }
-
         table {
             border: 1px solid black;
             border-collapse: collapse;
@@ -50,6 +40,11 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
             text-transform: uppercase;
         }
 
+        nav {
+            background-color: #333;
+            color: white;
+        }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -65,8 +60,6 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
             text-decoration: none;
             color: white;
         }
-
-
     </style>
 </head>
 <body>
@@ -79,23 +72,27 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
             <hr>
         </div>
 
-     <div class="col-md-12">   
-    <h1>Tabel Data Pelanggan</h1>
+    
+    <h1>Tabel Data Produk</h1>
     <table>
         <tr>
             <th width="80px"><b>id</b></th>
-            <th width="300px"><b>Nama</b></th>
-            <th width="200px"><b>Jenis Kelamin</b></th>
-            <th width="100px"><b>Telepon</b></th>
-            <th width="300px"><b>Alamat</b></th>
+            <th width="200px"><b>Kode produk</b></th>
+            <th width="200px"><b>Nama Produk</b></th>
+            <th width="100px"><b>Harga</b></th>
+            <th width="80px"><b>Stok</b></th>
+            <th width="80px"><b>Satuan</b></th>
+            <th width="100px"><b>Supplier id</b></th>
         </tr>
         <?php while ($data = mysqli_fetch_array($query)) { ?>
             <tr>
                 <td><?php echo $data['id']; ?></td>
-                <td><?php echo $data['nama']; ?></td>
-                <td><?php echo $data['jenis_kelamin']; ?></td>
-                <td><?php echo $data['telpon']; ?></td>
-                <td><?php echo $data['alamat']; ?></td>
+                <td><?php echo $data['kode_produk']; ?></td>
+                <td><?php echo $data['nama_produk']; ?></td>
+                <td><?php echo $data['harga']; ?></td>
+                <td><?php echo $data['stok']; ?></td>
+                <td><?php echo $data['satuan']; ?></td>
+                <td><?php echo $data['supplier_id']; ?></td>
             </tr>
         <?php } ?>
     </table>
