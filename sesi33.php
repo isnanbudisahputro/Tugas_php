@@ -29,7 +29,7 @@ $array = array("7", "3", "4", "9");
 $total = 0;
 
 foreach ($array as $nilai) {
-    $total += (int)$nilai; // Konversi nilai ke integer sebelum penjumlahan
+    $total += (int)$nilai; 
 }
 
 echo "Totalnya adalah $total";
