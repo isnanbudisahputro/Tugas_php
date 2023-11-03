@@ -1,6 +1,6 @@
 <?php
     include "connection.php";
-    $query = mysqli_query($conn, "SELECT * FROM pelanggan");
+    $query = mysqli_query($connection, "SELECT * FROM pelanggan");
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
             border: 1px solid black;
             border-collapse: collapse;
             width: 100%;
-            background-color: blue;
+            background-color: #A0E9FF;
         }
 
         th, td {
@@ -74,20 +74,22 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
     <div class="row">
         <div class="col-md-12 text-center mb-5 mt-5 loader">
             <a href="index.php">Home</a> |
-            <a href="produk.php">Produk</a> |
-            <a href="pembayaran.php">Pembayaran</a>
+            <a href="supplier.php">Supplier</a> |
+            <a href="produk.php">Produk</a>
             <hr>
         </div>
 
-     <div class="col-md-12">   
+     <div class="col-md-12"> 
     <h1>Tabel Data Pelanggan</h1>
+    <a href="tambah.php" class="btn btn-primary">Tambah data</a><br></br>
     <table>
         <tr>
             <th width="80px"><b>id</b></th>
             <th width="300px"><b>Nama</b></th>
             <th width="200px"><b>Jenis Kelamin</b></th>
-            <th width="100px"><b>Telepon</b></th>
+            <th width="100px"><b>Telpon</b></th>
             <th width="300px"><b>Alamat</b></th>
+            <th width="300px"><b>Tanggal Lahir</b></th>
         </tr>
         <?php while ($data = mysqli_fetch_array($query)) { ?>
             <tr>
@@ -96,6 +98,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
                 <td><?php echo $data['jenis_kelamin']; ?></td>
                 <td><?php echo $data['telpon']; ?></td>
                 <td><?php echo $data['alamat']; ?></td>
+                <td><?php echo $data['tanggal_lahir']; ?></td>
             </tr>
         <?php } ?>
     </table>

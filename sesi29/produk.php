@@ -1,6 +1,6 @@
 <?php
     include "connection.php";
-    $query = mysqli_query($conn, "SELECT * FROM produk");
+    $query = mysqli_query($connection, "SELECT * FROM produk");
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
             border: 1px solid black;
             border-collapse: collapse;
             width: 100%;
-            background-color: blue;
+            background-color: #A0E9FF;
         }
 
         th, td {
@@ -67,22 +67,23 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
     <div class="row">
         <div class="col-md-12 text-center mb-5 mt-5">
             <a href="index.php">Home</a> |
-            <a href="produk.php">Produk</a> |
-            <a href="pembayaran.php">Pembayaran</a>
+            <a href="supplier.php">Supplier</a> |
+            <a href="produk.php">Produk</a>
             <hr>
         </div>
 
-    
+        <div class="col-md-12"> 
     <h1>Tabel Data Produk</h1>
+    <a href="tambah_produk.php" class="btn btn-primary">Tambah data</a><br></br>
     <table>
         <tr>
             <th width="80px"><b>id</b></th>
-            <th width="200px"><b>Kode produk</b></th>
-            <th width="200px"><b>Nama Produk</b></th>
-            <th width="100px"><b>Harga</b></th>
+            <th width="200px"><b>Kode Produk</b></th>
+            <th width="100px"><b>Nama Produk</b></th>
+            <th width="80px"><b>Harga</b></th>
             <th width="80px"><b>Stok</b></th>
             <th width="80px"><b>Satuan</b></th>
-            <th width="100px"><b>Supplier id</b></th>
+            <th width="80px"><b>Supplier id</b></th>
         </tr>
         <?php while ($data = mysqli_fetch_array($query)) { ?>
             <tr>
