@@ -78,13 +78,13 @@ $query = mysqli_query($connection, "SELECT * FROM pelanggan");
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php"><b>Home</b></a>
+                        <a class="nav-link" href="http://localhost/tugas_phpp/sesi29/index.php"><b>Home</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="supplier.php"><b>Supplier</b></a>
+                        <a class="nav-link" href="http://localhost/tugas_phpp/sesi29/supplier/supplier.php"><b>Supplier</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="produk.php"><b>Produk</b></a>
+                        <a class="nav-link" href="http://localhost/tugas_phpp/sesi29/produk/produk.php"><b>Produk</b></a>
                     </li>
                 </ul>
             </div>

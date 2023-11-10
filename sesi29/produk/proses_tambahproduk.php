@@ -19,5 +19,5 @@ $stmt->bind_param("ississ", $kode_produk, $nama_produk, $harga, $stok, $satuan, 
 $stmt->execute();
 $stmt->close();
 
-header("Location: produk.php");
+header("Location:produk.php");
 ?>

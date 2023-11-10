@@ -9,6 +9,6 @@ include "connection.php";
 
 mysqli_query($connection, "UPDATE supplier SET nama = '$nama', telpon = '$telpon', alamat = '$alamat' WHERE id = '$id' ");
 
-    header("Location: supplier.php");
+    header("Location:supplier.php");
 
 ?>

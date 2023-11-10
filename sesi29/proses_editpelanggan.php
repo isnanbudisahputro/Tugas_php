@@ -16,5 +16,5 @@ mysqli_query($connection, "UPDATE pelanggan SET
     tanggal_lahir = '$tanggal_lahir'
     WHERE id = '$id' ");
 
-header("Location: index.php");
+header("Location:index.php");
 ?>

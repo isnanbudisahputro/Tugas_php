@@ -18,5 +18,5 @@ mysqli_query($connection, "UPDATE produk SET
     supplier_id = '$supplier_id'
     WHERE id = '$id' ");
 
-header("Location: produk.php");
+header("Location:produk.php");
 ?>

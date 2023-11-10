@@ -6,6 +6,6 @@ $id = $_GET['id'];
 
 mysqli_query($connection, "DELETE FROM produk WHERE id = '$id' ");
 
-    header("Location: produk.php");
+    header("Location:produk.php");
 
 ?>
